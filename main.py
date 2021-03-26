@@ -8,14 +8,14 @@ def main():
         'title': 'Testing'
     }
 
-    # можностаровать пустое окно
+    # можно старовать пустое окно
     # exec = GuiBasic(root, options)
 
     # или базовый запуск
     exec = create_gui(options)
 
     # выполнение базового лупа
-    exec.mainloop()
+    # exec.mainloop()
 
 if __name__ == '__main__':
     main()

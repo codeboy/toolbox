@@ -13,4 +13,7 @@ def create_gui(options=None):
     base_gui = GuiBasic(root, options)
     service_gui = Construct(root, options)
 
+    # выполнение базового цикла
+    root.mainloop()
+
     return root

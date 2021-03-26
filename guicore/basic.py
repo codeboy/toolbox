@@ -26,10 +26,12 @@ class GuiBasic(Frame):
         :param options: параметры вывода
         """
         print('Start init')
-        self.frame = Frame.__init__(self, parent)
+        self.parent = parent
+        self.base_frame = Frame(parent)
         self.style = Style()
         self.parent = parent
-        self.pack(fill=BOTH, expand=1)
+        # self.pack(fill=BOTH, expand=1)
+        self.base_frame.pack(fill=BOTH)
         # todo: refactor params and concate
         if options:
             self.options.update(options)
@@ -53,9 +55,9 @@ class GuiBasic(Frame):
         y = (sh - h) / 2
         self.parent.geometry('{0}x{1}+{2:.0f}+{3:.0f}'.format(w, h, x, y))
 
-        gui_frame = Frame(self, relief=RAISED, borderwidth=1)  # добавляем новый фрейм для группирования
-        gui_frame.pack(fill=BOTH, expand=True)
-        self.gui_frame = gui_frame
+        # gui_frame = Frame(relief=RAISED, borderwidth=3)  # добавляем новый фрейм для группирования
+        # gui_frame.pack(fill=BOTH, expand=True)
+        # self.gui_frame = gui_frame
         return True
 
     def init_ui(self):
