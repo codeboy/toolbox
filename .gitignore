@@ -1,0 +1,23 @@
+__pycache__/
+*~
+*.py[cod]
+*$py.class
+.idea/
+.venv
+*.sqlite*
+*.sublime-*
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
